@@ -1,71 +1,48 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Pomodoro Task Manager
 
-## Available Scripts
+## Project Description
 
-In the project directory, you can run:
+The **Pomodoro Task Manager** is a React application designed to combat procrastination and improve focus by combining a structured Pomodoro timer with mindfulness breaks. Users can set a goal number of work sessions, track their progress, and view inspirational quotes during breaks to enhance productivity and relaxation.
 
-### `npm start`
+## Problem Solved
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This app addresses the challenge of staying productive and re-energized during work and break intervals. Breaks are often difficult to enjoy meaningfully, leading to reduced focus. With motivational quotes and a structured timer, users can experience focused work sessions with thoughtful pauses.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Setup and Run Instructions
 
-### `npm test`
+**Clone the Repository:**
+```bash
+git clone https://github.com/Aabaran7/pomodoro-task-manager.git
+cd pomodoro-task-manager
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
 
-### `npm run build`
+**Install Dependencies:**
+```bash
+npm install
+npm install react-confetti
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**Run the Application:**
+```bash
+npm start
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+**Usage:**
+- If it does not happen automatically, Open the app in a browser at `http://localhost:3000`.
+- Set the desired number of Pomodoro sessions; the app will track and display each completed session.
+- During breaks, the app displays inspirational quotes, encouraging a moment of reflection.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## API Integration
 
-### `npm run eject`
+- **API Used**: [API Ninjas](https://api-ninjas.com)
+- **Integration**: API Ninjas was selected for its genre-filtering feature, allowing inspirational quotes to appear during breaks. The API fetch is implemented asynchronously, and the app manages any errors, showing a message if a quote fails to load.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## AI Credits
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+I designed and implemented the app independently, including ideas like confetti, session management, and API integration. I used AI assistance for:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# TaskRecommender-
+- **Sound Integration**: Guidance on managing audio playback at session end.
+- **Error Handling and Edge Cases**: Helped refine the error handling for API calls and edge cases to improve reliability.
+- **Code Integration**: Assisted with merging various functional components, like the timer, API calls, and UI updates.
