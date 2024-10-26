@@ -47,7 +47,7 @@ function App() {
   
     try {
       const response = await fetch(apiUrl, {
-        headers: { 'X-Api-Key': 'MKS3Man44J3MuVnMjok9TA==vk4HwLWCJqHgw3Q0' } 
+        headers: { 'X-Api-Key': 'API-KEY-HERE' } // ENTER API KEY HERE 
       });
   
       if (response.ok) {
